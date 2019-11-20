@@ -13,14 +13,14 @@ class CreateTableProductos extends Migration
      */
     public function up()
     {
-        Schema::create('table_productos', function (Blueprint $table) {
-            $table->bigInt('id');
-            $table->varchar('name');
-            $table->longtext('description');
-            $table->int('stock');
-            $table->double('price');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+        Schema::create('productos', function (Blueprint $table) {
+            $table->bigInteger('id');
+            $table->string('name',30);
+            $table->longText('description');
+            $table->integer('stock',11);
+            $table->double('price',8,2);
+            $table->timestamps();
+            $table->timestampsTz();
         });
     }
 
@@ -31,6 +31,6 @@ class CreateTableProductos extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_productos');
+        Schema::dropIfExists('productos');
     }
 }

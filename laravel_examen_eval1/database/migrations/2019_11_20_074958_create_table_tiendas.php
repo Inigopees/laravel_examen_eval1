@@ -13,15 +13,15 @@ class CreateTableTiendas extends Migration
      */
     public function up()
     {
-        Schema::create('table_tiendas', function (Blueprint $table) {
-            $table->bigInt('id');
-            $table->varchar('name');
-            $table->longtext('description');
-            $table->varchar('password');
-            $table->varchar('email');
-            $table->int('likes');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+        Schema::create('tiendas', function (Blueprint $table) {
+            $table->bigInteger('id');
+            $table->string('name',20);
+            $table->longText('description');
+            $table->string('password',255);
+            $table->string('email',50);
+            $table->integer('likes',11);
+            $table->timestamps();
+            $table->timestampsTz();
         });
     }
 
@@ -32,6 +32,6 @@ class CreateTableTiendas extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_tiendas');
+        Schema::dropIfExists('tiendas');
     }
 }
