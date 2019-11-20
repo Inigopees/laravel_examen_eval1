@@ -11,6 +11,12 @@ class tiendas extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('tiendas')->insert([
+            'name' => 'game',
+            'description' => 'tienda de juegos',
+            'password' => 'game1',
+            'email' => 'game@gmail.com',
+            'likes' => 5,
+        ]);
     }
 }

@@ -11,6 +11,11 @@ class productos extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
     }
 }
