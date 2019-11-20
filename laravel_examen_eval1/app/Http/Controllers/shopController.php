@@ -13,4 +13,5 @@ class shopController extends Controller
         $tienda->name = $request->get('nombre');
         $tienda->save();
     }
+    
 }
