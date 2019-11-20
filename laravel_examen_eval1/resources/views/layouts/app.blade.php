@@ -15,6 +15,7 @@
             <div class="links">
                 <a href="">Menu</a>
                 <a href="git">git</a>
+                <a href="{{route('inserarTienda')}}">Crear Tienda</a>
 
             </div>
             <hr><br><br>

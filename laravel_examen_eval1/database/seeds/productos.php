@@ -17,5 +17,42 @@ class productos extends Seeder
             'stock' => 1,
             'price' => 6.7,
         ]);
+
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
+        DB::table('productos')->insert([
+            'name' => 'gtaV',
+            'description' => 'accion',
+            'stock' => 1,
+            'price' => 6.7,
+        ]);
     }
 }
